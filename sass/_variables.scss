@@ -1,5 +1,5 @@
 // fonts
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap&subset=korean');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap&subset=korean');
 
 $body-font: 'Noto Sans KR', Arial, Helvetica, sans-serif;
 $headline-font: 'Comfortaa', Georgia, 'Times New Roman', Times, serif;
@@ -24,7 +24,7 @@ $color-backgrounds: $lightblue;
 //breakpoints
 
 $small: 32rem; // 512px
-$medium: 48rem; // 768px
+$medium: 54rem; // 864px
 $large: 75rem; // 1200px
 
 // animation

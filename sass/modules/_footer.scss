@@ -20,15 +20,19 @@
   @media (max-width: $medium) {
     flex-direction: column;
     padding: 4rem 2rem;
+    .max-width {
+      flex-direction: column;
+    }
     h2 {
       font-size: 2rem;
     }
     .contact-copy {
       text-align: center;
-    }
-    p {
-      padding: 0 8rem;
-      margin-bottom: 3rem;
+      p {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 3rem;
+      }
     }
   }
   @media (max-width: $small) {
@@ -134,6 +138,9 @@ textarea {
 .contact-copy,
 #myForm {
   width: 50vw;
+  @media (max-width: $medium) {
+    width: 100%;
+  }
 }
 
 // Footer Styles
@@ -143,20 +150,22 @@ textarea {
   display: flex;
 }
 
-.footer-left {
-  @media (max-width: $small) {
+div.footer-left {
+  @media (max-width: $medium) {
     flex-direction: column;
+    text-align: center;
+    align-items: center;
     div.logo a {
-      margin: 0 0 2rem 0;
+      margin-right: 1rem;
+    }
+    .footer-elements a {
+      margin-bottom: 3rem;
     }
   }
 }
 
 .footer-elements {
   flex-direction: column;
-  @media (max-width: $medium) {
-    display: none;
-  }
   @media (max-width: $small) {
     display: flex;
     flex-direction: column;
@@ -200,11 +209,12 @@ footer {
     margin-bottom: 1rem;
   }
   @media (max-width: $medium) {
-    p {
-      font-size: 0.875rem;
-    }
-  }
-  @media (max-width: $small) {
     display: none;
   }
 }
+
+// @media (max-width: 980px) {
+//   div.footer-left div.logo a {
+//     margin-right: 2rem;
+//   }
+// }

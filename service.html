@@ -33,9 +33,8 @@
       </header>
 
     <header class="mobile-header">
-      <a href="index.html"><img src="assets/logo.svg" /></a>
-      <p class="menu-toggle">Menu</p>
-      <!-- <img class="menu-toggle" src="assets/burger.svg"> -->
+      <a class="mobile-header-logo" href="index.html"><img src="assets/logo.svg" /></a>
+      <p class="menu-toggle"><img id="mobile-menu" src="assets/burger.svg"></p>
     </header>
 
     <div class="mobile-menu">
@@ -53,17 +52,17 @@
 
     <!-- Hero section -->
     <section class="main-hero">
-      <div class="max-width flex">
+      <div class="max-width flex items-center">
       
         <div class="hero-text service-hero">
-          <h1 class="ma0 mb1">OKR이<br> 처음이시라구요?</h1>
+          <h1 class="ma0 mb1"><span lang="en">OKR</span> 서비스</h1>
           <p>
-            “OKR을 이미 도입해서 사용 중인데 도움이 필요하시다구요?”<br>
-            대한민국 최고의 OKR전문가 이길상 대표가 강의, 워크숍, 컨설팅으로 <br>
-            대기업부터 스타트업까지 조직에 딱 맞게 OKR 도입을 지원합니다.<br>
+            “OKR도입, 실행을 위한 도움이 필요하시다구요?”<br>
+            대한민국 최고의 OKR전문가 이길상 대표가<br>
+            스타트업부터 대기업까지 조직에 딱 맞게 도와드립니다.<br>
 
           </p>
-          <a class="form-link-button" href="https://forms.gle/FhJJMEuSCQPv8tBa7" target="_blank"><button>체험 신청하기</button></a>
+          <a class="form-link-button" href="#form"><button>OKR 서비스 문의</button></a>
         </div>
         <div class="hero-illustration">
           <img src="assets/illustration_03.svg" />
@@ -75,19 +74,19 @@
     <!-- below hero -->
 
     <section class="main-second max-width">
-      <h3>OKR 서비스를 받으시면</h3>
+      <h3><span lang="en">OKR</span> 서비스를 받으시면</h3>
       <div class="card-wrapper">
         <div class="card card-1">
           <img src="assets/icon_01.svg" />
-          <h4>OKR 도입을 위한 리더와<br>구성원들의 이해와 공감을<br>만들 수 있습니다.</h4>
+          <h4>OKR 도입을 위한 리더와 <br>구성원들의 이해와 공감을<br>만들 수 있습니다.</h4>
         </div>
         <div class="card card-2">
           <img src="assets/icon_02.svg" />
-          <h4>OKR 수립부터 실행까지<br>단계별로 가이드를 습득할<br>수 있습니다.</h4>
+          <h4>OKR 수립부터 실행까지<br>단계별로 가이드를 <br>습득할 수 있습니다.</h4>
         </div>
         <div class="card card-3">
           <img src="assets/icon_03.svg" />
-          <h4>조직 규모나 업의 특성에 맞는 OKR 도입과 수립 방법을 찾을 수 있습니다.</h4>
+          <h4>조직 규모나 업의 특성에 맞는<br> OKR 도입과 수립 방법을<br> 찾을 수 있습니다.</h4>
         </div>
       </div>
     </section>
@@ -95,7 +94,7 @@
     <!-- OKR 강의 -->
     <section class="classes flex max-width" id="okr-classes">
       <div class="w-20-l mr4-l">
-        <h3>OKR 강의</h3>
+        <h3><span lang="en">OKR</span> 강의</h3>
         <p class="class-time-info">2~3시간</p>
       </div>
       <div class="w-100 w-80-l">
@@ -103,7 +102,7 @@
           <h6>왜 OKR인가?</h6>
           <ul>
             <li>OKR을 하는 목적: 진정한 성과관리, OKR</li>
-            <li>OKR을 하면 경험하게 되는것들: 우선순위 집중, 얼라인먼트, 도전</li>
+            <li>OKR을 하면 경험하게 되는 것들: 우선순위 집중, 얼라인먼트, 도전</li>
           </ul>
         </div>
         <div class="individual-class">
@@ -129,7 +128,7 @@
     <!-- OKR 수립 워크숍 -->
     <section class="classes flex max-width" id="okr-workshop">
       <div class="w-20-l mr4-l">
-        <h3>OKR 수립 워크숍</h3>
+        <h3><span lang="en">OKR</span> 수립 워크숍</h3>
         <p class="class-time-info">6시간</p>
       </div>
       <div class="w-100 w-80-l">
@@ -163,7 +162,7 @@
     <!-- OKR 컨설팅 -->
     <section class="consulting flex max-width" id="okr-consulting">
       <div class="w-100 w-20-l mr4-l">
-        <h3>OKR 컨설팅</h3>
+        <h3><span lang="en">OKR</span> 컨설팅</h3>
         <p class="class-time-info">12w 기준*</p>
         <p class="t&c">* 12주 기준<br>
         - 조직 2단계 OKR수립 기준임<br>
@@ -215,11 +214,11 @@
     </section>
 
     <!-- Form -->
-    <section class="service-query">
+    <section class="service-query" id="form">
       <div class="max-width flex">
 
       <div class="contact-copy">
-        <h2>OKR 서비스 문의</h2>
+        <h2><span lang="en">OKR</span> 서비스 문의</h2>
         <p>OKR 도입하기 원하시나요?<br> OKR 실행과정에서 어려움이 있으신가요?<br> OKR에 대해서 무엇이든 물어보세요.</p>
       </div>
 
@@ -257,15 +256,15 @@
         </div>
 
         <div class="footer-elements">
-          <a href="service.html">서비스</a>
           <a href="contents.html">콘텐츠</a>
+          <a href="service.html">서비스</a>
           <a href="https://forms.gle/FhJJMEuSCQPv8tBa7" target="_blank">체험 신청하기</a>
           <a href="http://app.heyokr.com/" target="_blank">로그인</a>
         </div>
       </div>
 
       <div class="footer-right">
-        <p class="footer-heading">사업사 정보</p>
+        <p class="footer-heading">사업자 정보</p>
         <p>
           대표: 이길상<br>
           사업자등록번호: 684-32-00532<br>

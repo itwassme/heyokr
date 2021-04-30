@@ -27,12 +27,15 @@ section.mission {
     display: flex;
     flex-direction: column;
   }
+  section.main-services {
+    text-align: left;
+  }
 }
 
 // Hey OKR을 통해 section
 section.main-second {
   @media (max-width: $medium) {
-    padding: 0 6rem;
+    // padding: 0 6rem;
     img,
     p {
       display: none;
@@ -146,7 +149,7 @@ section.videos {
 
 img.top-arrow {
   display: none;
-  opacity: 0.1;
+  opacity: 0.6;
   transition: all 0.2s ease;
   @media (max-width: $small) {
     cursor: pointer;
@@ -157,4 +160,8 @@ img.top-arrow {
     z-index: 50;
     width: 3rem;
   }
+}
+
+img.top-arrow:hover {
+  opacity: 1;
 }

@@ -38,21 +38,37 @@ button:hover {
   transform: translate(-1px, -4px);
 }
 
-button.secondary-button {
-  background-color: $grey3;
-  margin-right: 0.5rem;
-}
+// button.secondary-button {
+//   background-color: $grey3;
+//   margin-right: 0.5rem;
+// }
 
-button.secondary-button:hover {
-  // background-color: $grey4;
-  background-color: $orange;
-}
+// button.secondary-button:hover {
+//   background-color: $grey4;
+// }
 
 .book-button-wrapper {
+  a {
+    margin-right: 0.5rem;
+  }
   button {
     font-size: 14px;
     padding: 1rem 2.4rem;
-    @media (max-width: $small) {
+  }
+
+  @media (max-width: 1050px) {
+    a button.secondary-button {
+      width: 240px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (max-width: $medium) {
+    padding: 0 4rem;
+  }
+
+  @media (max-width: $small) {
+    button {
       margin: 0;
       width: 240px;
       margin-bottom: 1rem;

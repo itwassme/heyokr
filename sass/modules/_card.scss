@@ -19,6 +19,12 @@
     }
   }
 
+  @media (max-width: $medium) {
+    h4 {
+      margin: 0.5rem;
+    }
+  }
+
   @media (max-width: $small) {
     flex-direction: column;
     padding: 2rem;
@@ -97,8 +103,8 @@
       align-self: center;
       font-size: 0.875rem;
       @media (max-width: $medium) {
-        font-size: 10px;
-        width: 3rem !important;
+        font-size: 8px;
+        width: auto;
         text-align: center;
       }
     }
@@ -211,9 +217,6 @@ div.single-content {
     div {
       margin-right: auto;
       margin-left: auto;
-      h6 {
-        padding: 0 8rem;
-      }
       p {
         margin-right: auto;
         margin-left: auto;

@@ -28,6 +28,14 @@
     .slide-text h2 {
       font-size: 2rem;
     }
+    .slide-text p {
+      margin-right: auto;
+      margin-left: auto;
+    }
+    div.slide-text-wrapper,
+    div.slide-illustration {
+      width: 100%;
+    }
   }
 
   @media (max-width: $small) {
@@ -60,10 +68,6 @@
       p {
         text-align: center;
       }
-    }
-    div.slide-text-wrapper,
-    div.slide-illustration {
-      width: 100%;
     }
   }
 }

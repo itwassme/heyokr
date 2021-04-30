@@ -8,6 +8,9 @@ header {
     align-self: center;
     padding-bottom: 1rem;
   }
+  @media (max-width: 1310px) {
+    padding: 0;
+  }
 }
 
 div.logo {
@@ -36,6 +39,9 @@ header.mobile-header {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 2rem 1rem 2rem;
+    .mobile-header-logo {
+      z-index: 20;
+    }
     .menu-toggle {
       cursor: pointer;
       z-index: 10;
