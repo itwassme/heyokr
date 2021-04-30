@@ -1,0 +1,269 @@
+.card {
+  padding: 3rem 3rem 3.5rem 3rem;
+  background-color: $lightblue;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  @media (max-width: $large) {
+    padding: 1.25rem;
+    p {
+      font-size: 0.875rem;
+    }
+  }
+
+  @media (max-width: $small) {
+    flex-direction: column;
+    padding: 2rem;
+    h4 {
+      margin: 0;
+    }
+    margin-bottom: 1rem;
+  }
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  img {
+    width: 3rem;
+  }
+  @media (max-width: $medium) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+.main-services {
+  .service-illustration {
+    width: 40%;
+    margin-right: 2rem;
+    img {
+      max-width: 27rem;
+    }
+    @media (max-width: $medium) {
+      display: none;
+    }
+  }
+  .service-text-wrapper {
+    width: 60%;
+    .card {
+      padding: 2rem;
+      margin-bottom: 1rem;
+      justify-content: space-between;
+    }
+    @media (max-width: $medium) {
+      width: 100%;
+    }
+  }
+  ul {
+    padding: 0;
+    @media (max-width: $small) {
+      text-align: left;
+    }
+  }
+  li {
+    font-size: 0.875rem;
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
+  li:last-of-type {
+    margin-bottom: 0;
+  }
+  .service-arrow {
+    margin-top: 0.5rem;
+    a {
+      color: $orange;
+      font-size: 0.875rem;
+    }
+  }
+  .service-hour {
+    border: 1px solid;
+    border-radius: 10px;
+    height: 10px;
+    display: flex;
+    padding: 0.8rem;
+    p {
+      align-self: center;
+      font-size: 0.875rem;
+      @media (max-width: $medium) {
+        font-size: 10px;
+        width: 3rem !important;
+        text-align: center;
+      }
+    }
+  }
+}
+
+div.service-text-wrapper .card {
+  flex-direction: row;
+}
+
+.service-info {
+  align-items: flex-start;
+  h4,
+  ul {
+    margin: 0 !important;
+  }
+
+  h4 {
+    align-self: auto;
+  }
+  @media (max-width: $small) {
+    text-align: left;
+    flex-direction: column;
+  }
+}
+
+.card-text {
+  flex-direction: column;
+  margin-right: 3rem;
+  @media (max-width: $small) {
+    margin-bottom: 1rem;
+  }
+}
+
+// card animation
+
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translate(-4px, -16px);
+  box-shadow: 8px 8px 16px -2px rgba(52, 71, 96, 0.06);
+}
+
+// 콘텐츠 카드
+
+div.single-content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 30px 20px;
+  @media (max-width: $large) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 16px;
+  }
+  @media (max-width: $small) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+div.single-content {
+  background-color: #f6f8fc;
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  h6 {
+    margin-right: 2.5rem;
+  }
+  img {
+    width: 1rem;
+  }
+  .single-content-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+// OKR 도서
+.book-details {
+  background-color: #f6f8fc;
+  padding: 2rem;
+  display: flex;
+  line-height: 1.8;
+  img {
+    max-height: 16rem;
+    margin-right: 6rem;
+  }
+  h6 {
+    margin-bottom: 0.5rem;
+  }
+  p {
+    max-width: 24rem;
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+  @media (max-width: $medium) {
+    flex-direction: column;
+    padding: 3rem 2rem;
+    img {
+      max-width: 10rem;
+      height: auto;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 1rem;
+    }
+    div {
+      margin-right: auto;
+      margin-left: auto;
+      h6 {
+        padding: 0 8rem;
+      }
+      p {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+  @media (max-width: $small) {
+    div h6 {
+      padding: 0 1rem;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+// OKR 기고
+.articles {
+  div.individual-article {
+    background-color: #f6f8fc;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    transition: all 0.2s ease;
+    &:hover {
+      transform: translate(-1px, -6px);
+    }
+    @media (max-width: $small) {
+      padding: 1rem;
+      margin-bottom: 0.5rem;
+      h6 {
+        font-size: 0.875rem;
+      }
+      a {
+        font-size: 0.875rem;
+        display: flex;
+        align-items: center;
+      }
+      img {
+        margin-left: 0.5rem;
+        max-height: 10px;
+      }
+    }
+  }
+  a {
+    color: $orange;
+  }
+  img {
+    margin-left: 1rem;
+  }
+}

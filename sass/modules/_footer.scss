@@ -1,0 +1,210 @@
+// 서비스 문의
+
+.service-query {
+  background-color: $lightblue;
+  padding: 6rem 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  h2 {
+    margin-bottom: 1rem;
+  }
+  .contact-copy {
+    display: flex;
+    flex-direction: column;
+    p {
+      align-self: flex-start;
+      line-height: 1.8;
+    }
+  }
+  @media (max-width: $medium) {
+    flex-direction: column;
+    padding: 4rem 2rem;
+    h2 {
+      font-size: 2rem;
+    }
+    .contact-copy {
+      text-align: center;
+    }
+    p {
+      padding: 0 8rem;
+      margin-bottom: 3rem;
+    }
+  }
+  @media (max-width: $small) {
+    .contact-copy p {
+      padding: 0 3rem;
+    }
+  }
+}
+
+input,
+textarea {
+  display: block;
+  margin-bottom: 0.5rem;
+  border: none;
+  line-height: 1.5;
+  font-size: 1rem;
+  height: 3rem;
+  width: 100%;
+  padding: 0 12px;
+  outline: none;
+  color: $color-body;
+}
+
+textarea#msg {
+  padding-top: 0.5rem;
+  line-height: 1.5;
+}
+
+form {
+  width: 50%;
+  .form-field-single {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    @media (max-width: $medium) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  label {
+    display: inline-block;
+    width: 6rem;
+    margin-right: 1rem;
+    text-align: end;
+    @media (max-width: $medium) {
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+  }
+  ::placeholder {
+    color: $grey3;
+  }
+  @media (max-width: $medium) {
+    width: 100%;
+  }
+}
+
+.form-field-single {
+  label {
+    width: 20%;
+  }
+  input,
+  textarea {
+    width: 80%;
+    @media (max-width: $medium) {
+      width: 100%;
+    }
+  }
+
+  textarea {
+    padding: 4px 12px;
+  }
+}
+
+.service-button-wrapper {
+  display: flex;
+  @media (max-width: $medium) {
+    margin-top: 2rem;
+  }
+}
+
+.button-space {
+  width: 20%;
+  display: flex;
+  margin-right: 1rem;
+  @media (max-width: $medium) {
+    display: none;
+  }
+}
+
+.service-button {
+  width: 80%;
+  @media (max-width: $medium) {
+    width: 100%;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+// width settings for form
+.contact-copy,
+#myForm {
+  width: 50vw;
+}
+
+// Footer Styles
+
+.footer-left,
+.footer-elements {
+  display: flex;
+}
+
+.footer-left {
+  @media (max-width: $small) {
+    flex-direction: column;
+    div.logo a {
+      margin: 0 0 2rem 0;
+    }
+  }
+}
+
+.footer-elements {
+  flex-direction: column;
+  @media (max-width: $medium) {
+    display: none;
+  }
+  @media (max-width: $small) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+div.footer-elements a {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+footer {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+  a {
+    font-weight: bold;
+    margin-bottom: 1.4rem;
+    font-size: 1rem;
+  }
+  @media (max-width: $small) {
+    justify-content: center;
+    text-align: center;
+    a {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.footer-right {
+  width: 26rem;
+  p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  .footer-heading {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  @media (max-width: $medium) {
+    p {
+      font-size: 0.875rem;
+    }
+  }
+  @media (max-width: $small) {
+    display: none;
+  }
+}

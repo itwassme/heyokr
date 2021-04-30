@@ -1,0 +1,160 @@
+section {
+  margin-top: 7.5rem;
+  @media (max-width: $medium) {
+    padding: 0 2rem;
+    margin-top: 4rem;
+  }
+  @media (max-width: $small) {
+    text-align: center;
+    padding: 0 1rem;
+  }
+}
+
+section.main-second,
+section.main-contents,
+section.main-services,
+section.mission {
+  h3 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: $medium) {
+  section.main-contents .single-content-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// Hey OKR을 통해 section
+section.main-second {
+  @media (max-width: $medium) {
+    padding: 0 6rem;
+    img,
+    p {
+      display: none;
+    }
+  }
+  @media (max-width: $small) {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 1rem;
+  }
+}
+
+// Hey OKR 영상 section
+
+section.videos {
+  div.individual-video {
+    border-top: 1px solid #ccc;
+    padding: 2rem 0;
+    display: flex;
+    transition: all 0.2s ease;
+    &:last-child {
+      border-bottom: 1px solid #ccc;
+    }
+    &:hover {
+      transform: translate(-1px, -6px);
+    }
+    .youtube-thumbnail-wrapper {
+      width: 10rem;
+      margin-right: 4rem;
+    }
+    .text-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding-right: 2rem;
+      img {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  a {
+    color: $orange;
+  }
+
+  @media (max-width: $medium) {
+    .youtube-thumbnail-wrapper {
+      display: none;
+    }
+    .text-wrapper {
+      align-items: flex-start;
+      line-height: 1;
+      img {
+        margin-left: 0.5rem;
+      }
+    }
+    h6,
+    a {
+      font-size: 0.875rem;
+      line-height: 1;
+    }
+  }
+}
+
+@media (max-width: $small) {
+  .individual-article h6,
+  .individual-article a {
+    font-size: 12px !important;
+  }
+  .text-wrapper {
+    align-items: center;
+    padding: 0 !important;
+    h6,
+    a {
+      font-size: 12px !important;
+    }
+    img {
+      margin-left: 8px !important;
+      height: 10px;
+    }
+  }
+}
+
+// OKR 컨설팅
+
+.t\&c {
+  font-size: 10px;
+  color: #1d1c1d;
+  opacity: 0.5;
+  line-height: 1.8;
+  margin-top: 1rem;
+}
+
+// 길&People
+.mission {
+  @media (max-width: $medium) {
+    h4 {
+      padding: 0 4rem;
+    }
+    img {
+      display: none;
+    }
+  }
+  @media (max-width: $small) {
+    h4 {
+      padding: 0;
+    }
+  }
+}
+
+img.top-arrow {
+  display: none;
+  opacity: 0.1;
+  transition: all 0.2s ease;
+  @media (max-width: $small) {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 50;
+    width: 3rem;
+  }
+}

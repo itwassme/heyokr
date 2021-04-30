@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap&subset=korean');
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+}
+
+:lang(ko) {
+  font-family: $body-font, sans-serif;
+  word-break: keep-all;
+}
+
+:lang(en) {
+  font-family: $headline-font;
+  line-height: 1.2;
+}
+
+body {
+  font-family: $body-font;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  color: $color-body;
+  @media (max-width: $large) {
+    font-size: 95% !important;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  // align-self: flex-end;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $headline-font;
+  font-weight: normal;
+  color: $color-headlines;
+  line-height: 1.2;
+  max-width: 30em;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5rem !important;
+  @media (max-width: $medium) {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.4;
+  @media (max-width: $large) {
+    font-size: 2.5rem;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+  @media (max-width: $large) {
+    font-size: 1.5rem;
+  }
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.6;
+  @media (max-width: $large) {
+    font-size: 1.2rem;
+  }
+}
+
+h6 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  @media (max-width: $large) {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+.body2 {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.body3 {
+  font-size: 0.875rem;
+  line-height: 1.8;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+  line-height: 1.2;
+  color: $color-body;
+}
+
+footer a {
+  font-weight: bold;
+}
+
+.highlight {
+  color: $orange;
+}
+
+form {
+  line-height: 1.2;
+  color: $grey4;
+  label {
+    font-size: 12px;
+    letter-spacing: 1;
+  }
+
+  input {
+    font-size: 0.875rem;
+  }
+}
+
+ul,
+li {
+  color: $color-body;
+  opacity: 0.8;
+}
+
+@media (max-width: $medium) {
+  br {
+    display: none;
+  }
+}

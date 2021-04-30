@@ -1,0 +1,32 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap&subset=korean');
+
+$body-font: 'Noto Sans KR', Arial, Helvetica, sans-serif;
+$headline-font: 'Comfortaa', Georgia, 'Times New Roman', Times, serif;
+
+// colors
+$orange: #f57c3d;
+$brown: #ad4c1a;
+$black: #1d1c1d;
+$grey4: #504e50;
+$grey3: #b6b4b6;
+$grey2: #e1e0e1;
+
+$alert: #f34e4e;
+$success: #2f80ed;
+$lightblue: #f6f8fc;
+
+// example text colors below
+$color-headlines: $black;
+$color-body: $grey4;
+$color-backgrounds: $lightblue;
+
+//breakpoints
+
+$small: 32rem; // 512px
+$medium: 48rem; // 768px
+$large: 75rem; // 1200px
+
+// animation
+$timing: 1s;
+$bezier: cubic-bezier(0.215, 0.61, 0.355, 1);
