@@ -80,6 +80,9 @@ section.videos {
 
   a {
     color: $orange;
+    h6 {
+      color: $color-body;
+    }
   }
 
   @media (max-width: $medium) {

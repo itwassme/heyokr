@@ -973,6 +973,9 @@ section.videos div.individual-video .text-wrapper img {
 section.videos a {
   color: #f57c3d;
 }
+section.videos a h6 {
+  color: #504e50;
+}
 @media (max-width: 54rem) {
   section.videos .youtube-thumbnail-wrapper {
     display: none;
