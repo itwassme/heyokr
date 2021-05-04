@@ -64,13 +64,13 @@ button:hover {
   }
 
   @media (max-width: $medium) {
-    padding: 0 4rem;
+    // padding: 0 4rem;
   }
 
   @media (max-width: $small) {
     button {
       margin: 0;
-      width: 240px;
+      width: auto;
       margin-bottom: 1rem;
     }
   }

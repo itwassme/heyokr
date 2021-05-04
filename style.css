@@ -38,6 +38,11 @@ body {
     display: block;
   }
 }
+@media (max-width: 32rem) {
+  .max-width {
+    padding: 1rem;
+  }
+}
 
 @media (max-width: 54rem) {
   section {
@@ -512,6 +517,9 @@ section.main-hero {
     margin-right: auto;
     margin-left: auto;
   }
+  section.main-hero p {
+    width: 100%;
+  }
   section.main-hero .hero-text a {
     width: 80%;
   }
@@ -771,15 +779,10 @@ button:hover {
     margin-bottom: 1rem;
   }
 }
-@media (max-width: 54rem) {
-  .book-button-wrapper {
-    padding: 0 4rem;
-  }
-}
 @media (max-width: 32rem) {
   .book-button-wrapper button {
     margin: 0;
-    width: 240px;
+    width: auto;
     margin-bottom: 1rem;
   }
 }
@@ -892,6 +895,17 @@ img.next:hover {
 
 .hero-text br .slide br {
   display: block;
+}
+
+section.slide {
+  height: 80vh;
+  margin: 8rem auto -6rem auto;
+}
+@media (max-width: 54rem) {
+  section.slide {
+    height: auto;
+    margin: 2rem auto;
+  }
 }
 
 section {
@@ -1297,8 +1311,11 @@ div.single-content .single-content-inner {
   }
 }
 @media (max-width: 32rem) {
+  .book-details {
+    padding: 1rem 0.5rem;
+  }
   .book-details div h6 {
-    padding: 0 1rem;
+    padding: 0;
   }
   .book-details p {
     font-size: 14px;
@@ -1452,6 +1469,18 @@ section.classes li:last-of-type {
     margin-left: 2rem !important;
   }
 }
+@media (max-width: 480px) {
+  .ebs-business-review a h6 {
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    line-height: 2;
+  }
+  .ebs-business-review .business-review-link {
+    width: 100%;
+  }
+}
+
 .service-query {
   background-color: #f6f8fc;
   padding: 6rem 0;

@@ -114,3 +114,13 @@ img.next:hover {
 .hero-text br .slide br {
   display: block;
 }
+
+// set the height
+section.slide {
+  height: 80vh;
+  margin: 8rem auto -6rem auto;
+  @media (max-width: $medium) {
+    height: auto;
+    margin: 2rem auto;
+  }
+}

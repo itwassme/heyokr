@@ -122,3 +122,8 @@ const arrowTop = document.querySelector('img.top-arrow');
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+// autoslide
+const autoSlide = setInterval(function () {
+  next();
+}, 4000);

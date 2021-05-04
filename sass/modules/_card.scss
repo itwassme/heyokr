@@ -224,8 +224,9 @@ div.single-content {
     }
   }
   @media (max-width: $small) {
+    padding: 1rem 0.5rem;
     div h6 {
-      padding: 0 1rem;
+      padding: 0;
     }
     p {
       font-size: 14px;
