@@ -52,6 +52,10 @@ header.mobile-header {
       max-height: 2.4rem;
     }
   }
+
+  @media (max-width: 400px) {
+    padding: 1.5rem;
+  }
 }
 
 .mobile-menu {

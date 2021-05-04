@@ -43,6 +43,11 @@ body {
     padding: 1rem;
   }
 }
+@media (max-width: 375px) {
+  .max-width {
+    padding: 0.5rem;
+  }
+}
 
 @media (max-width: 54rem) {
   section {
@@ -677,6 +682,11 @@ header.mobile-header {
   }
   header.mobile-header img {
     max-height: 2.4rem;
+  }
+}
+@media (max-width: 400px) {
+  header.mobile-header {
+    padding: 1.5rem;
   }
 }
 
@@ -1378,6 +1388,12 @@ section.classes div.individual-class {
   justify-content: space-between;
   margin-bottom: 1rem;
 }
+@media (max-width: 380px) {
+  section.consulting div.individual-class,
+section.classes div.individual-class {
+    padding: 1.5rem;
+  }
+}
 section.consulting ul,
 section.classes ul {
   width: 65%;
@@ -1519,12 +1535,6 @@ section.classes li:last-of-type {
     margin-bottom: 3rem;
   }
 }
-@media (max-width: 32rem) {
-  .service-query .contact-copy p {
-    padding: 0 3rem;
-  }
-}
-
 input,
 textarea {
   display: block;
@@ -1581,6 +1591,11 @@ form ::placeholder {
 
 .form-field-single label {
   width: 20%;
+}
+@media (max-width: 32rem) {
+  .form-field-single label {
+    width: 100%;
+  }
 }
 .form-field-single input,
 .form-field-single textarea {
@@ -1691,6 +1706,7 @@ footer a {
   footer {
     justify-content: center;
     text-align: center;
+    margin-top: 4rem;
   }
   footer a {
     margin-bottom: 2rem;

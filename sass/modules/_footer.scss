@@ -36,9 +36,6 @@
     }
   }
   @media (max-width: $small) {
-    .contact-copy p {
-      padding: 0 3rem;
-    }
   }
 }
 
@@ -93,6 +90,9 @@ form {
 .form-field-single {
   label {
     width: 20%;
+    @media (max-width: $small) {
+      width: 100%;
+    }
   }
   input,
   textarea {
@@ -192,6 +192,7 @@ footer {
   @media (max-width: $small) {
     justify-content: center;
     text-align: center;
+    margin-top: 4rem;
     a {
       margin-bottom: 2rem;
     }

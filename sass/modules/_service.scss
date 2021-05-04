@@ -17,6 +17,9 @@ section.classes {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
+    @media (max-width: 380px) {
+      padding: 1.5rem;
+    }
   }
   ul {
     width: 65%;
