@@ -109,6 +109,7 @@ section.classes {
 
 .ebs-business-review {
   @media (max-width: 480px) {
+    align-items: center;
     a {
       // width: 50%;
       h6 {
@@ -121,5 +122,23 @@ section.classes {
     .business-review-link {
       width: 100%;
     }
+  }
+}
+
+// 서비스 전체보기
+@media (max-width: $small) {
+  .main-services .service-text-wrapper .card {
+    padding: 1.2rem;
+  }
+  section.consulting,
+  section.classes {
+    ul,
+    li {
+      font-size: 12px;
+    }
+  }
+
+  span.hide-in-mobile {
+    display: none;
   }
 }

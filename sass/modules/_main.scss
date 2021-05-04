@@ -109,7 +109,7 @@ section.videos {
   .individual-article a {
     font-size: 12px !important;
   }
-  .text-wrapper {
+  section.videos .text-wrapper {
     align-items: center;
     padding: 0 !important;
     h6,
@@ -120,6 +120,11 @@ section.videos {
       margin-left: 8px !important;
       height: 10px;
     }
+  }
+
+  .book-details div h6,
+  .individual-class h6 {
+    font-size: 12px !important;
   }
 }
 

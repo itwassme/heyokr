@@ -1050,17 +1050,22 @@ section.videos a {
     font-size: 12px !important;
   }
 
-  .text-wrapper {
+  section.videos .text-wrapper {
     align-items: center;
     padding: 0 !important;
   }
-  .text-wrapper h6,
-.text-wrapper a {
+  section.videos .text-wrapper h6,
+section.videos .text-wrapper a {
     font-size: 12px !important;
   }
-  .text-wrapper img {
+  section.videos .text-wrapper img {
     margin-left: 8px !important;
     height: 10px;
+  }
+
+  .book-details div h6,
+.individual-class h6 {
+    font-size: 12px !important;
   }
 }
 .t\&c {
@@ -1200,6 +1205,11 @@ img.top-arrow:hover {
   list-style: none;
   margin-bottom: 0.5rem;
 }
+@media (max-width: 32rem) {
+  .main-services li {
+    font-size: 12px;
+  }
+}
 .main-services li:last-of-type {
   margin-bottom: 0;
 }
@@ -1223,9 +1233,14 @@ img.top-arrow:hover {
 }
 @media (max-width: 54rem) {
   .main-services .service-hour p {
-    font-size: 8px;
+    font-size: 8px !important;
     width: auto;
     text-align: center;
+  }
+}
+@media (max-width: 32rem) {
+  .main-services .service-hour {
+    padding: 0.8rem 0.6rem;
   }
 }
 
@@ -1512,6 +1527,9 @@ section.classes li:last-of-type {
   }
 }
 @media (max-width: 480px) {
+  .ebs-business-review {
+    align-items: center;
+  }
   .ebs-business-review a h6 {
     text-align: left;
     margin: 0;
@@ -1523,6 +1541,22 @@ section.classes li:last-of-type {
   }
 }
 
+@media (max-width: 32rem) {
+  .main-services .service-text-wrapper .card {
+    padding: 1.2rem;
+  }
+
+  section.consulting ul,
+section.consulting li,
+section.classes ul,
+section.classes li {
+    font-size: 12px;
+  }
+
+  span.hide-in-mobile {
+    display: none;
+  }
+}
 .service-query {
   background-color: #f6f8fc;
   padding: 6rem 0;
@@ -1561,6 +1595,12 @@ section.classes li:last-of-type {
     margin-bottom: 3rem;
   }
 }
+@media (max-width: 32rem) {
+  .service-query {
+    padding: 4rem 1rem;
+  }
+}
+
 input,
 textarea {
   display: block;

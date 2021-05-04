@@ -82,6 +82,9 @@
     font-size: 0.875rem;
     list-style: none;
     margin-bottom: 0.5rem;
+    @media (max-width: $small) {
+      font-size: 12px;
+    }
   }
   li:last-of-type {
     margin-bottom: 0;
@@ -103,10 +106,14 @@
       align-self: center;
       font-size: 0.875rem;
       @media (max-width: $medium) {
-        font-size: 8px;
+        font-size: 8px !important;
         width: auto;
         text-align: center;
       }
+    }
+
+    @media (max-width: $small) {
+      padding: 0.8rem 0.6rem;
     }
   }
 }
