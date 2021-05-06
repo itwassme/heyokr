@@ -946,19 +946,16 @@ img.next:hover {
 }
 
 section.slide {
-  height: 70vh;
+  height: auto;
   margin: 6rem auto 0rem auto;
 }
 @media (max-width: 75rem) {
   section.slide {
-    height: 60vh;
     margin: 4rem auto;
   }
 }
 @media (max-width: 54rem) {
   section.slide {
-    height: 50vh;
-    height: auto;
     margin: 2rem auto;
   }
 }
@@ -982,7 +979,6 @@ ul.slide-indicator {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 8rem;
-  margin-top: -6rem;
   opacity: 1;
   padding: 0;
 }

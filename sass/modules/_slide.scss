@@ -133,15 +133,13 @@ img.next:hover {
 
 // set the height
 section.slide {
-  height: 70vh;
+  height: auto;
   margin: 6rem auto 0rem auto;
   @media (max-width: $large) {
-    height: 60vh;
+    // height: 60vh;
     margin: 4rem auto;
   }
   @media (max-width: $medium) {
-    height: 50vh;
-    height: auto;
     margin: 2rem auto;
   }
 }
@@ -165,7 +163,6 @@ ul.slide-indicator {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 8rem;
-  margin-top: -6rem;
   opacity: 1;
   padding: 0;
 
