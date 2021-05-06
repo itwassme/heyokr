@@ -16,10 +16,6 @@ button {
   transition: 0.2s ease;
   width: auto;
 
-  @media (max-width: $large) {
-    padding: 0.8rem 2rem;
-    font-size: 0.8rem;
-  }
   @media (max-width: $small) {
     padding: 0.8rem 2.5rem;
   }

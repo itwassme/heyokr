@@ -67,9 +67,13 @@ const bodyTag = document.querySelector('.slide-text p');
 const imgTag = document.querySelector('.slide-illustration');
 
 const slideArea = document.querySelector('.slide');
-
 const slideText = slideArea.querySelector('.slide-text');
 const slideAnimation = slideArea.querySelector('.slide-illustration');
+
+// 슬라이드 인디케이터
+const indicatorParent = document.querySelector('.slide-indicator');
+const indicators = document.querySelectorAll('.slide-indicator li');
+index = 0;
 
 // increase the pageNumber
 const next = function () {
@@ -78,6 +82,12 @@ const next = function () {
     pageNumber = 0;
   }
   updateSection();
+
+  // 인디케이터
+  document
+    .querySelector('.slide-indicator .selected')
+    .classList.remove('selected');
+  indicatorParent.children[pageNumber].classList.add('selected');
 };
 
 // decrease the updateSection
@@ -87,7 +97,26 @@ const previous = function () {
     pageNumber = pages.length - 1;
   }
   updateSection();
+
+  // 인디케이터
+  document
+    .querySelector('.slide-indicator .selected')
+    .classList.remove('selected');
+  indicatorParent.children[pageNumber].classList.add('selected');
 };
+
+// 인디케이터 클릭시 변경
+indicators.forEach((indicator, i) => {
+  indicator.addEventListener('click', () => {
+    document
+      .querySelector('.slide-indicator .selected')
+      .classList.remove('selected');
+    indicator.classList.add('selected');
+    index = i;
+    pageNumber = index;
+    updateSection();
+  });
+});
 
 // update the slide section
 const updateSection = function () {
@@ -124,6 +153,6 @@ function scrollToTop() {
 }
 
 // autoslide
-const autoSlide = setInterval(function () {
-  next();
-}, 4000);
+// const autoSlide = setInterval(function () {
+//   next();
+// }, 4000);

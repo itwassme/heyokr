@@ -102,13 +102,19 @@ video {
 
 img.prev,
 img.next {
-  opacity: 0.5;
+  opacity: 1;
   transition: all 0.2s ease;
+}
+
+@media (max-width: $medium) {
+  img.prev {
+    padding-right: 1rem;
+  }
 }
 
 img.prev:hover,
 img.next:hover {
-  opacity: 1;
+  opacity: 0.4;
 }
 
 .hero-text br .slide br {
@@ -122,5 +128,44 @@ section.slide {
   @media (max-width: $medium) {
     height: auto;
     margin: 2rem auto;
+  }
+}
+
+div.slide-illustration {
+  img,
+  video {
+    max-height: 400px;
+    @media (max-width: $medium) {
+      margin-top: 2rem;
+    }
+  }
+}
+
+// slideshow indicating number
+ul.slide-indicator {
+  list-style: none;
+  display: flex;
+  max-width: 15%;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 8rem;
+  margin-top: -8rem;
+  opacity: 1;
+  li {
+    width: 8px;
+    height: 8px;
+    background: $grey3;
+    // border: 2px solid #333;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .selected {
+    background: $orange;
+  }
+  @media (max-width: $medium) {
+    z-index: 20;
+    margin: 0rem auto 4rem auto;
+    padding: 0;
   }
 }

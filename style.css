@@ -775,12 +775,6 @@ button {
   transition: 0.2s ease;
   width: auto;
 }
-@media (max-width: 75rem) {
-  button {
-    padding: 0.8rem 2rem;
-    font-size: 0.8rem;
-  }
-}
 @media (max-width: 32rem) {
   button {
     padding: 0.8rem 2.5rem;
@@ -920,13 +914,18 @@ video {
 
 img.prev,
 img.next {
-  opacity: 0.5;
+  opacity: 1;
   transition: all 0.2s ease;
 }
 
+@media (max-width: 54rem) {
+  img.prev {
+    padding-right: 1rem;
+  }
+}
 img.prev:hover,
 img.next:hover {
-  opacity: 1;
+  opacity: 0.4;
 }
 
 .hero-text br .slide br {
@@ -941,6 +940,46 @@ section.slide {
   section.slide {
     height: auto;
     margin: 2rem auto;
+  }
+}
+
+div.slide-illustration img,
+div.slide-illustration video {
+  max-height: 400px;
+}
+@media (max-width: 54rem) {
+  div.slide-illustration img,
+div.slide-illustration video {
+    margin-top: 2rem;
+  }
+}
+
+ul.slide-indicator {
+  list-style: none;
+  display: flex;
+  max-width: 15%;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 8rem;
+  margin-top: -8rem;
+  opacity: 1;
+}
+ul.slide-indicator li {
+  width: 8px;
+  height: 8px;
+  background: #b6b4b6;
+  border-radius: 50px;
+  cursor: pointer;
+}
+ul.slide-indicator .selected {
+  background: #f57c3d;
+}
+@media (max-width: 54rem) {
+  ul.slide-indicator {
+    z-index: 20;
+    margin: 0rem auto 4rem auto;
+    padding: 0;
   }
 }
 
@@ -1148,7 +1187,6 @@ img.top-arrow:hover {
   .card {
     flex-direction: column;
     padding: 2rem;
-    margin-bottom: 0.875rem;
     margin-bottom: 1rem;
   }
   .card h4 {
