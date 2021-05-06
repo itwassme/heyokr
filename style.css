@@ -1136,7 +1136,7 @@ img.top-arrow:hover {
 }
 @media (max-width: 54rem) {
   .card {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
   .card h4 {
     margin: 0.5rem;
@@ -1148,6 +1148,7 @@ img.top-arrow:hover {
   .card {
     flex-direction: column;
     padding: 2rem;
+    margin-bottom: 0.875rem;
     margin-bottom: 1rem;
   }
   .card h4 {
