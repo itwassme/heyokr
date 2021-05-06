@@ -19,7 +19,7 @@ section.main-hero {
   }
   @media (max-width: $small) {
     flex-direction: column-reverse;
-    padding: 1rem;
+    padding: 0rem;
     margin-right: auto;
     margin-left: auto;
     p {

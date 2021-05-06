@@ -518,7 +518,7 @@ section.main-hero {
 @media (max-width: 32rem) {
   section.main-hero {
     flex-direction: column-reverse;
-    padding: 1rem;
+    padding: 0rem;
     margin-right: auto;
     margin-left: auto;
   }
