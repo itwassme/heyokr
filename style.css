@@ -822,6 +822,19 @@ button:hover {
   margin-right: auto;
   margin-left: auto;
 }
+.slide div.slide-text-wrapper {
+  padding-left: 6rem;
+}
+@media (max-width: 75rem) {
+  .slide div.slide-text-wrapper {
+    padding-left: 4rem;
+  }
+}
+@media (max-width: 54rem) {
+  .slide div.slide-text-wrapper {
+    padding-left: 0;
+  }
+}
 .slide div.slide-text-wrapper,
 .slide div.slide-illustration {
   width: 50%;
@@ -933,11 +946,18 @@ img.next:hover {
 }
 
 section.slide {
-  height: 80vh;
+  height: 70vh;
   margin: 8rem auto -6rem auto;
+}
+@media (max-width: 75rem) {
+  section.slide {
+    height: 60vh;
+    margin: 4rem auto;
+  }
 }
 @media (max-width: 54rem) {
   section.slide {
+    height: 50vh;
     height: auto;
     margin: 2rem auto;
   }
@@ -957,17 +977,18 @@ div.slide-illustration video {
 ul.slide-indicator {
   list-style: none;
   display: flex;
-  max-width: 15%;
+  max-width: 10%;
   justify-content: space-between;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 8rem;
   margin-top: -8rem;
   opacity: 1;
+  padding: 0;
 }
 ul.slide-indicator li {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #b6b4b6;
   border-radius: 50px;
   cursor: pointer;
@@ -980,6 +1001,11 @@ ul.slide-indicator .selected {
     z-index: 20;
     margin: 0rem auto 4rem auto;
     padding: 0;
+    max-width: 15%;
+  }
+  ul.slide-indicator li {
+    width: 8px;
+    height: 8px;
   }
 }
 

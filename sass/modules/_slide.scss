@@ -3,6 +3,16 @@
   margin-right: auto;
   margin-left: auto;
 
+  div.slide-text-wrapper {
+    padding-left: 6rem;
+    @media (max-width: $large) {
+      padding-left: 4rem;
+    }
+    @media (max-width: $medium) {
+      padding-left: 0;
+    }
+  }
+
   div.slide-text-wrapper,
   div.slide-illustration {
     width: 50%;
@@ -123,9 +133,14 @@ img.next:hover {
 
 // set the height
 section.slide {
-  height: 80vh;
+  height: 70vh;
   margin: 8rem auto -6rem auto;
+  @media (max-width: $large) {
+    height: 60vh;
+    margin: 4rem auto;
+  }
   @media (max-width: $medium) {
+    height: 50vh;
     height: auto;
     margin: 2rem auto;
   }
@@ -145,16 +160,18 @@ div.slide-illustration {
 ul.slide-indicator {
   list-style: none;
   display: flex;
-  max-width: 15%;
+  max-width: 10%;
   justify-content: space-between;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 8rem;
   margin-top: -8rem;
   opacity: 1;
+  padding: 0;
+
   li {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     background: $grey3;
     // border: 2px solid #333;
     border-radius: 50px;
@@ -167,5 +184,10 @@ ul.slide-indicator {
     z-index: 20;
     margin: 0rem auto 4rem auto;
     padding: 0;
+    max-width: 15%;
+    li {
+      width: 8px;
+      height: 8px;
+    }
   }
 }
