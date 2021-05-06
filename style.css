@@ -1135,8 +1135,13 @@ img.top-arrow:hover {
   }
 }
 @media (max-width: 54rem) {
+  .card {
+    margin-bottom: 0.5rem;
+  }
   .card h4 {
     margin: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 @media (max-width: 32rem) {

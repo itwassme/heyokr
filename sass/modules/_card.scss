@@ -20,8 +20,11 @@
   }
 
   @media (max-width: $medium) {
+    margin-bottom: 0.5rem;
     h4 {
       margin: 0.5rem;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
 
