@@ -187,4 +187,7 @@ ul.slide-indicator {
       height: 8px;
     }
   }
+  @media (max-width: $medium) {
+    max-width: 20%;
+  }
 }

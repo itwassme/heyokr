@@ -1004,6 +1004,11 @@ ul.slide-indicator .selected {
     height: 8px;
   }
 }
+@media (max-width: 54rem) {
+  ul.slide-indicator {
+    max-width: 20%;
+  }
+}
 
 section {
   margin-top: 7.5rem;
