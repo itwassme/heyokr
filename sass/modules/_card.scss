@@ -20,7 +20,7 @@
   }
 
   @media (max-width: $medium) {
-    margin-bottom: 1rem;
+    margin-bottom: 0.875rem;
     h4 {
       margin: 0.5rem;
       margin-right: auto;
@@ -31,10 +31,10 @@
   @media (max-width: $small) {
     flex-direction: column;
     padding: 2rem;
+    margin-bottom: 0.5rem;
     h4 {
       margin: 0;
     }
-    margin-bottom: 1rem;
   }
 }
 
@@ -68,7 +68,6 @@
     width: 60%;
     .card {
       padding: 2rem;
-      margin-bottom: 1rem;
       justify-content: space-between;
     }
     @media (max-width: $medium) {
@@ -256,6 +255,9 @@ div.single-content {
     transition: all 0.2s ease;
     &:hover {
       transform: translate(-1px, -6px);
+    }
+    @media (max-width: $medium) {
+      margin-bottom: 0.875rem;
     }
     @media (max-width: $small) {
       padding: 1rem;

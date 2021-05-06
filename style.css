@@ -1202,7 +1202,7 @@ img.top-arrow:hover {
 }
 @media (max-width: 54rem) {
   .card {
-    margin-bottom: 1rem;
+    margin-bottom: 0.875rem;
   }
   .card h4 {
     margin: 0.5rem;
@@ -1214,7 +1214,7 @@ img.top-arrow:hover {
   .card {
     flex-direction: column;
     padding: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   .card h4 {
     margin: 0;
@@ -1255,7 +1255,6 @@ img.top-arrow:hover {
 }
 .main-services .service-text-wrapper .card {
   padding: 2rem;
-  margin-bottom: 1rem;
   justify-content: space-between;
 }
 @media (max-width: 54rem) {
@@ -1455,6 +1454,11 @@ div.single-content .single-content-inner {
 }
 .articles div.individual-article:hover {
   transform: translate(-1px, -6px);
+}
+@media (max-width: 54rem) {
+  .articles div.individual-article {
+    margin-bottom: 0.875rem;
+  }
 }
 @media (max-width: 32rem) {
   .articles div.individual-article {
