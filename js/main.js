@@ -37,8 +37,7 @@ const pages = [
     img: '<img src="assets/screen_02.png" />'
   },
   {
-    heading:
-      '<span lang="en">OKR</span> 실행 관리<br> (프로젝트, 과제, 이니셔티브 등)',
+    heading: '<span lang="en">OKR</span> 실행 관리<br> (프로젝트, 과제 등)',
     paragraph:
       '핵심결과(Key Results)를 위한 다양한 과제/이니셔티브를 설정하고 진행을 관리합니다. OKR 외에도 업무관리나 프로젝트 매니지먼트에 효과적입니다.',
     img: `<video width="441" height="300" autoplay muted loop>
