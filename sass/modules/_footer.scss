@@ -153,14 +153,23 @@ textarea {
 
 div.footer-left {
   @media (max-width: $medium) {
+    .logo {
+      padding: 0;
+      margin: 3rem auto;
+      a {
+        margin: 0;
+      }
+    }
     flex-direction: column;
     text-align: center;
     align-items: center;
-    div.logo a {
-      margin-right: 1rem;
-    }
     .footer-elements a {
       margin-bottom: 3rem;
+    }
+  }
+  @media (max-width: $small) {
+    .logo {
+      margin: 0 auto 3rem auto;
     }
   }
 }
@@ -195,7 +204,7 @@ footer {
     text-align: center;
     margin-top: 4rem;
     a {
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
     }
   }
 }
@@ -214,9 +223,3 @@ footer {
     display: none;
   }
 }
-
-// @media (max-width: 980px) {
-//   div.footer-left div.logo a {
-//     margin-right: 2rem;
-//   }
-// }

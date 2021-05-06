@@ -738,12 +738,15 @@ header.mobile-header {
 }
 .mobile-menu nav a {
   font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 4rem;
 }
 @media (max-width: 32rem) {
   .mobile-menu nav a {
     margin-bottom: 3rem;
   }
+}
+.mobile-menu nav a:last-of-type {
+  margin-bottom: 0;
 }
 
 .open {
@@ -1807,11 +1810,20 @@ textarea {
     text-align: center;
     align-items: center;
   }
-  div.footer-left div.logo a {
-    margin-right: 1rem;
+  div.footer-left .logo {
+    padding: 0;
+    margin: 3rem auto;
+  }
+  div.footer-left .logo a {
+    margin: 0;
   }
   div.footer-left .footer-elements a {
     margin-bottom: 3rem;
+  }
+}
+@media (max-width: 32rem) {
+  div.footer-left .logo {
+    margin: 0 auto 3rem auto;
   }
 }
 
@@ -1850,7 +1862,7 @@ footer a {
     margin-top: 4rem;
   }
   footer a {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 }
 
